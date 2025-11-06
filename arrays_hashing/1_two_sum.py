@@ -10,7 +10,7 @@ def two_sum(nums: list[int], target:int) -> list[int]:
             if nums[i] + nums[j] == target:
                 return [i, j]
 
-    # faster approach with enumarate()+
+    # faster approach with enumarate()
     # hmap = {}
     # for idx, num in enumerate(nums):
     #     compliment = target - num
