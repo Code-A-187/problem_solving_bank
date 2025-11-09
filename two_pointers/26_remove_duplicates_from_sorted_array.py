@@ -4,25 +4,25 @@ from typing import List
 def remove_duplicates(nums: List[int]) -> int:
 
     #two pointers with for 
-    # k = 0
+    # k = 1
 
     # for i in range(1, len(nums)):
-    #     if nums[k] != nums[i]:
-    #         k += 1
+    #     if nums[i] != nums[k-1]:
     #         nums[k] = nums[i]
+    #         k += 1
 
-    # return k+1
+    # return k
 
     # two pointers with while
-    i = 0
+    i = 1
     j = 1
     count = 1
 
     while j < len(nums):
-        if nums[i] == nums[j]:
+        if nums[i-1] == nums[j]:
             j +=1
         else:
-            nums[i+1] = nums[j]
+            nums[i] = nums[j]
             j += 1
             i += 1
             count += 1
