@@ -16,7 +16,6 @@ def running_sum(nums: List[int]) -> List[int]:
     # make it in place
     # for i in range(1, len(nums)):
     #     nums[i] = nums[i-1] + nums[i]
-    #     nums = [i + i - 1 for i in nums]
     
     # return nums
 
