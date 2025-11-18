@@ -7,27 +7,30 @@
 # Perfect Number Example
 # 6 = 1 + 2 + 3
 
-# def first_four_perfect_numbers():
-#     res = []
+from typing import List
 
-#     start_number = 1
 
-#     while len(res) < 4:
-#         # starting to check every number from 1 up
-#         curr_sum = 0
-#     # find all numbers proper positive divisors of the cheked number 
-#         for i in range(1, start_number):
-#             # sum all numebers that are proper positive divisors
-#             if start_number % i == 0:
-#                 curr_sum += i
-#         # if result is the number we check than the number we are looking at is perfect number 
-#         if start_number == curr_sum:
-#             # every number that is perfect number we can put in an array
-#             res.append(start_number)
-#         start_number += 1
-#     # when the array is len 4 the method return these four numbers
-#     return res
-# print(first_four_perfect_numbers())
+def first_four_perfect_numbers() -> List[int]:
+    res = []
+
+    start_number = 1
+
+    while len(res) < 4:
+        # starting to check every number from 1 up
+        curr_sum = 0
+    # find all numbers proper positive divisors of the cheked number 
+        for i in range(1, start_number):
+            # sum all numebers that are proper positive divisors
+            if start_number % i == 0:
+                curr_sum += i
+        # if result is the number we check than the number we are looking at is perfect number 
+        if start_number == curr_sum:
+            # every number that is perfect number we can put in an array
+            res.append(start_number)
+        start_number += 1
+    # when the array is len 4 the method return these four numbers
+    return res
+print(first_four_perfect_numbers())
 
 # def first_ten_perfect_numbers():
 #     # first ten p such that (2^p - 1) is a Mersenne prime
