@@ -7,7 +7,7 @@ class ListNode:
         m = 0
 
 def remove_nth_node_from_end(head: Optional[ListNode], n: int) -> Optional[ListNode]:
-    dummy = ListNode()
+    dummy = ListNode(0, head)
     slow = dummy
     fast = head
 
