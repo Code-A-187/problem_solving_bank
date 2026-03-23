@@ -26,11 +26,6 @@ def add_two_numbers(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[
 
     return res.next
 
-        
-
-
-
-
 node3 = ListNode(3)
 node2 = ListNode(4, next=node3)
 node1 = ListNode(2, next=node2)
